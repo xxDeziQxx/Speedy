@@ -1,0 +1,11 @@
+local Humanoid = game:GetService('Players').LocalPlayer.Character:FindFirstChildOfClass('Humanoid')
+
+
+
+Humanoid.Changed:Connect(function(state)
+if state == "WalkSpeed" or "JumpPower" then
+Humanoid.WalkSpeed = 70
+Humanoid.JumpPower = 100
+end
+end)
+Humanoid.WalkSpeed = 70
